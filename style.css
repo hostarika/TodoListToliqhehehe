@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+:root{
+    --qora:black;
+    --oq:white;
+    --purple:#6C63FF;
+    --qizil:red;
+    --yashil:green;
+    --bg: bisque;
+}
+.dark{
+   --qora:white;
+   --oq:black;
+   --purple:#6C63FF;
+   --bg:black;
+   --qizil:red;
+    --yashil:green;
+
+}
+body{
+    background-color: var(--bg);
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 50px;
+    color: var(--qora);
+}
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 700px;
+    margin: 20px auto;
+    align-items: center;
+}
+#input-text{
+    width: 50%;
+    height: 50px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    color: var(--qora);
+    background-color: var(--oq);
+    border: 1px solid var(--qora);
+}
+#add-btn{
+   color: var(--oq);
+   background-color: var(--purple);
+   font-size: 20px;
+   padding: 12px 30px;
+   border-radius: 14px;
+}
+#dark-btn{
+    color: var(--oq);
+    background-color: var(--purple);
+    font-size: 28px;
+    padding: 6px 30px;
+    border-radius: 14px;
+}
+#sun{
+    display: none;
+}
+#todo-list li{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    justify-content: space-between;
+    margin: 10px auto ;
+    color: var(--qora);
+}
+#todo-list li div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#check{
+    width: 30px;
+    height: 30px;
+}
+
+#change-btn,#delete-btn{
+    color: var(--oq);
+    background-color: var(--yashil);
+    font-size: 28px;
+    padding: 6px 30px;
+    border-radius: 14px;
+    margin: 0 5px;
+}
+#delete-btn{
+    background-color: var(--qizil);
+}
+.addtext{
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+   
+}
+.input-boks{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.check{
+    color: red;
+    text-decoration: line-through;
+}
